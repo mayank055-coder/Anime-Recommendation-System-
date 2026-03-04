@@ -1,1 +1,1 @@
-https://anime-recommendation-webai.streamlit.app
+https://anime-recommendation-webai.streamlit.app/
