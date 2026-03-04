@@ -50,7 +50,7 @@ Cloud-deployable
 🏗 System Architecture
 1️⃣ Data Preprocessing
 
-Load dataset (anime.csv)
+Load dataset (anime (2).csv)
 
 Handle missing genre values
 
@@ -79,29 +79,51 @@ Fetch live posters from Jikan API
 Display recommendations in responsive column layout
 
 🛠 Tech Stack
+
 Technology	Purpose
+
 Python	Core Programming
+
 Pandas	Data Processing
+
 Scikit-Learn	TF-IDF & Cosine Similarity
+
 Streamlit	Web Application Framework
+
 Requests	API Handling
+
 MyAnimeList	Anime Metadata Source
+
 📂 Project Structure
+
 anime-recommendation-system/
 │
+
 ├── app.py
+
 ├── anime.csv
+
 ├── requirements.txt
+
 ├── runtime.txt
+
 └── README.md
+
 ⚙ Installation & Setup
+
 1️⃣ Clone Repository
+
 git clone https://github.com/your-username/anime-recommendation-system.git
 cd anime-recommendation-system
+
 2️⃣ Install Dependencies
+
 pip install -r requirements.txt
+
 3️⃣ Run Application
+
 streamlit run app.py
+
 ☁ Deployment (Streamlit Cloud)
 
 This project is optimized for deployment on:
@@ -123,23 +145,35 @@ Required Files:
 requirements.txt
 
 streamlit
+
 pandas
+
 scikit-learn
+
 requests
 
 runtime.txt
 
 python-3.11
+
 🎯 Key Features
 
 ✔ Content-Based Filtering
+
 ✔ TF-IDF Vectorization
+
 ✔ Cosine Similarity Ranking
+
 ✔ Top 5 Smart Recommendations
+
 ✔ Case-Insensitive Search
+
 ✔ Live Poster Fetching (No API Key Required)
+
 ✔ Streamlit Cloud Optimized
+
 ✔ Clean & Responsive UI
+
 ✔ Cached Computations for Performance
 
 🚀 Performance Optimization
