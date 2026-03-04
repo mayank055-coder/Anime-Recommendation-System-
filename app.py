@@ -8,12 +8,13 @@ import html
 # Load and clean data
 @st.cache_data
 def load_data():
-    anime = pd.read_csv("anime (2).csv")
+    anime = pd.read_csv("anime (2).csv").head(3000)
     anime['genre'] = anime['genre'].fillna('')
     anime['name'] = anime['name'].apply(html.unescape).str.strip()
     return anime
 
 # Recommender setup
+@st.cache_resource
 def create_similarity_matrix(anime_df):
     tfidf = TfidfVectorizer(stop_words='english')
     tfidf_matrix = tfidf.fit_transform(anime_df['genre'])
@@ -51,3 +52,4 @@ if user_input:
         st.success("✅ Here are some anime you might enjoy:")
         for i, name in enumerate(recommendations, 1):
             st.write(f"{i}. {name}")
+
