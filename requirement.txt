@@ -1,5 +1,5 @@
-streamlit
-pandas
-scikit-learn
-requests
-numpy
+streamlit==1.32.0
+pandas==2.2.1
+scikit-learn==1.4.1
+requests==2.31.0
+
