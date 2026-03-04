@@ -8,7 +8,7 @@ import html
 # Load and clean data
 @st.cache_data
 def load_data():
-    anime = pd.read_csv("anime (2).csv").head(10000)
+    anime = pd.read_csv("anime (2).csv")
     anime['genre'] = anime['genre'].fillna('')
     anime['name'] = anime['name'].apply(html.unescape).str.strip()
     return anime
@@ -52,5 +52,6 @@ if user_input:
         st.success("✅ Here are some anime you might enjoy:")
         for i, name in enumerate(recommendations, 1):
             st.write(f"{i}. {name}")
+
 
 
