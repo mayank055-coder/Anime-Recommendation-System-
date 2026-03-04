@@ -5,7 +5,7 @@ from sklearn.metrics.pairwise import linear_kernel
 import requests
 import html
 
-st.set_page_config(page_title="Anime Recommender", layout="wide)
+st.set_page_config(page_title="Anime Recommender", layout="wide")
 @st.cache_data
 def load_data():
     anime = pd.read_csv("anime (2).csv")
