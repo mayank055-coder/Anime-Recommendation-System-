@@ -8,11 +8,11 @@ import html
 st.set_page_config(page_title="Anime Recommender", layout="wide")
 @st.cache_data
 def load_data():
-    anime = pd.read_csv("anime (2).csv")
+    anime = pd.read_csv("anime (2).csv").head()
     anime['genre'] = anime['genre'].fillna('')
     anime['name'] = anime['name'].apply(html.unescape).str.strip()
     return anime
-@st.cache_data
+@st.cache_resource
 def create_similarity_matrix(anime_df):
     tfidf = TfidfVectorizer(stop_words='english')
     tfidf_matrix = tfidf.fit_transform(anime_df['genre'])
