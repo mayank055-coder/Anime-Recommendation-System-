@@ -1,216 +1,177 @@
-🎌 Anime Recommendation System
+# 🎌 Anime Recommendation System
 
-A Production-Ready Content-Based Anime Recommendation System built using TF-IDF Vectorization and Cosine Similarity, deployed with Streamlit Cloud, and integrated with live poster fetching via the Jikan (MyAnimeList) API.
 
-🔗 Live Application:
+### 🚀 Intelligent Content-Based Anime Recommender
+
+Built with NLP • Powered by ML • Deployed on Cloud
+
+🔴 **Live Application:**\
 https://anime-recommendation-webai.streamlit.app
 
-📌 Executive Overview
+![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![ML](https://img.shields.io/badge/Machine%20Learning-TF--IDF-orange?style=for-the-badge)
+![Streamlit](https://img.shields.io/badge/Streamlit-Live%20Deployed-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Production%20Ready-00C853?style=for-the-badge)
+:::
 
-With thousands of anime titles available globally, discovering similar content based on user preference can be overwhelming.
+------------------------------------------------------------------------
 
-This project solves that problem using a Content-Based Filtering Approach, leveraging Natural Language Processing (NLP) techniques to recommend anime based on genre similarity — without requiring user history or collaborative data.
+## ✨ Project Overview
 
-The system:
+In a world of thousands of anime titles, discovering similar content can
+be overwhelming.
 
-Processes anime genre metadata
+This project solves that using a **Content-Based Filtering System**
+powered by:
 
-Converts textual genres into numerical vectors using TF-IDF
+-   🧠 Natural Language Processing\
+-   📊 TF-IDF Vectorization\
+-   📐 Cosine Similarity\
+-   🎨 Live poster fetching via Jikan API\
+-   ☁ Seamless deployment on Streamlit Cloud
 
-Computes similarity scores using Cosine Similarity
+No login required.\
+No user history required.\
+No API key required.
 
-Returns the Top 5 Most Relevant Anime
+------------------------------------------------------------------------
 
-Dynamically fetches posters using the Jikan API
+## 🎯 What Makes This Special?
 
-Runs on a clean and interactive Streamlit web interface
+✅ Fully ML-Driven Recommendation Logic
 
-🧠 Problem Statement
+✅ Cold-Start Friendly
 
-Traditional recommendation systems often rely on user behavior data (collaborative filtering), which is not always available.
+✅ Real-Time Poster Fetching
 
-This project implements a Content-Based Recommendation System, where recommendations are generated based solely on:
+✅ Optimized for Cloud Deployment
 
-Genre similarity
+✅ Clean Responsive UI
 
-Text feature extraction
+✅ Recruiter-Ready ML Portfolio Project
 
-Mathematical similarity scoring
+------------------------------------------------------------------------
 
-This makes the system:
+## 🧠 How It Works
 
-Lightweight
+User Inputs Anime Name\
+↓\
+Genre Extraction\
+↓\
+TF-IDF Vectorization\
+↓\
+Cosine Similarity Calculation\
+↓\
+Top 5 Ranked Recommendations\
+↓\
+Live Poster Fetch + UI Display
 
-Scalable
+------------------------------------------------------------------------
+## 🏗 Machine Learning Pipeline
 
-Cold-start friendly
+## 🔹 Data Preprocessing
 
-Cloud-deployable
+Handle missing values
 
-🏗 System Architecture
-1️⃣ Data Preprocessing
+Clean & normalize titles
 
-Load dataset (anime (2).csv)
+## 🔹 Feature Engineering
 
-Handle missing genre values
+Apply TF-IDF on genre column
 
-Normalize and clean anime titles
+Convert text → numerical vectors
 
-2️⃣ Feature Engineering
+## 🔹 Similarity Engine
 
-Apply TF-IDF Vectorization on the genre column
+Cosine similarity matrix
 
-Convert text data into numerical feature vectors
+Rank by highest similarity score
 
-3️⃣ Similarity Computation
+## 🔹 Frontend
 
-Compute Cosine Similarity Matrix
+Streamlit interactive layout
 
-Rank anime titles based on similarity scores
+Poster rendering
 
-4️⃣ UI Rendering (Streamlit Layer)
+Responsive UI columns
+## 🛠 Tech Stack
 
-Accept user search input
+-Layer	Technology
 
-Retrieve Top 5 similar anime
+-Language	                                         |               Python
 
-Fetch live posters from Jikan API
+-Data	       |    Pandas
 
-Display recommendations in responsive column layout
+-NLP           | 	 Scikit-learn
 
-🛠 Tech Stack
+-Web	     |        Streamlit
 
-Technology	Purpose
+-API	    |         Jikan
 
-Python	Core Programming
+-Deployment	   |  Streamlit Cloud
 
-Pandas	Data Processing
+------------------------------------------------------------------------
 
-Scikit-Learn	TF-IDF & Cosine Similarity
+## 📂 Project Structure
 
-Streamlit	Web Application Framework
-
-Requests	API Handling
-
-MyAnimeList	Anime Metadata Source
-
-📂 Project Structure
-
-anime-recommendation-system/
-│
-
-├── app.py
-
-├── anime.csv
-
-├── requirements.txt
-
-├── runtime.txt
-
+anime-recommendation-system/\
+│\
+├── app.py\
+├── anime.csv\
+├── requirements.txt\
+├── runtime.txt\
 └── README.md
 
-⚙ Installation & Setup
+------------------------------------------------------------------------
 
-1️⃣ Clone Repository
+## ⚙ Installation
 
-git clone https://github.com/your-username/anime-recommendation-system.git
-cd anime-recommendation-system
+-git clone https://github.com/your-username/anime-recommendation-system.git
 
-2️⃣ Install Dependencies
+-cd anime-recommendation-system
 
-pip install -r requirements.txt
+-pip install -r requirements.txt
 
-3️⃣ Run Application
+-streamlit run app.py
 
-streamlit run app.py
 
-☁ Deployment (Streamlit Cloud)
+## ☁ Deployment Ready
 
-This project is optimized for deployment on:
+## requirements.txt
 
-👉 Streamlit Cloud
+-streamlit
 
-Deployment Steps:
+-pandas
 
-Push repository to GitHub
+-scikit-learn
 
-Connect repository in Streamlit Cloud
+-requests
 
-Select app.py
+## runtime.txt
 
-Deploy
+-python-3.11
 
-Required Files:
+## Push → Connect → Deploy → Live 🚀
 
-requirements.txt
+## 🚀 Key Highlights
 
-streamlit
+🔥 Content-Based Filtering
 
-pandas
+🔥 Real-Time Poster Fetching
 
-scikit-learn
+🔥 Optimized for Cloud
 
-requests
+🔥 Lightweight ML Model
 
-runtime.txt
-
-python-3.11
-
-🎯 Key Features
-
-✔ Content-Based Filtering
-
-✔ TF-IDF Vectorization
-
-✔ Cosine Similarity Ranking
-
-✔ Top 5 Smart Recommendations
-
-✔ Case-Insensitive Search
-
-✔ Live Poster Fetching (No API Key Required)
-
-✔ Streamlit Cloud Optimized
-
-✔ Clean & Responsive UI
-
-✔ Cached Computations for Performance
-
-🚀 Performance Optimization
-
-Cached similarity matrix using st.cache_resource
-
-Optimized dataset size for cloud memory limits
-
-Efficient API calls with lightweight JSON parsing
-
-Fast vector similarity computation
-
-📈 Future Enhancements
-
-Add Rating & Popularity Filtering
-
-Display Similarity Percentage
-
-Implement Fuzzy Search
-
-Hybrid Recommendation System
-
-User Preference Personalization
-
-Deploy with Docker for production scaling
+🔥 Recruiter-Ready Portfolio Project
 
 👨‍💻 Author
 
 Mayank Gupta
 BCA Student | Aspiring Data Analyst | ML Enthusiast
 
-🔗 LinkedIn:
-https://www.linkedin.com/in/mayank-gupta-data-analyst
+<p align="center"> <a href="https://www.linkedin.com/in/mayank-gupta-data-analyst"> <img src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin"/> </a> <a href="https://github.com/mayank055-coder"> <img src="https://img.shields.io/badge/GitHub-Follow-black?style=for-the-badge&logo=github"/> </a> </p>
 
-🔗 GitHub:
-https://github.com/mayank055-coder
+<p align="center"> ⭐ If you like this project, consider giving it a star! ⭐ </p> ```
 
-⭐ If You Like This Project
 
-Consider giving it a ⭐ on GitHub — it helps showcase the project to recruiters and supports open-source growth.
