@@ -8,7 +8,7 @@ import html
 st.set_page_config(page_title="Anime Recommender", layout="wide")
 @st.cache_data
 def load_data():
-    anime = pd.read_csv("anime (2).csv").head()
+    anime = pd.read_csv("anime (2).csv").head(3000)
     anime['genre'] = anime['genre'].fillna('')
     anime['name'] = anime['name'].apply(html.unescape).str.strip()
     return anime
